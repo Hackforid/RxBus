@@ -1,0 +1,87 @@
+rootProject.ext.buildToolsVersion = "26.0.2"
+rootProject.ext.compileSdkVersion = 26
+
+
+rootProject.ext.ANDROID_SUPPORT_LIBS_VERSION = "27.0.2"
+rootProject.ext.FIREBASE_VERSION = "11.8.0"
+rootProject.ext.ANKO = "0.10.4"
+rootProject.ext.FACEBOOK_VERSION = "4.28.0"
+
+rootProject.ext.minSdkVersion = 15
+rootProject.ext.targetSdkVersion = 23
+rootProject.ext.dbflow_version = "4.1.2"
+
+rootProject.ext.butterknifeVersion = "9.0.0-SNAPSHOT"
+
+rootProject.ext.deps = [
+        androidCardView         : "com.android.support:cardview-v7:$ANDROID_SUPPORT_LIBS_VERSION",
+        androidDesignLibrary    : "com.android.support:design:$ANDROID_SUPPORT_LIBS_VERSION",
+        androidRecyclerView     : "com.android.support:recyclerview-v7:$ANDROID_SUPPORT_LIBS_VERSION",
+        androidAnnotations      : "com.android.support:support-annotations:$ANDROID_SUPPORT_LIBS_VERSION",
+        androidAppCompat        : "com.android.support:appcompat-v7:$ANDROID_SUPPORT_LIBS_VERSION",
+        androidSupportV4        : "com.android.support:support-compat:$ANDROID_SUPPORT_LIBS_VERSION",
+        androidPercent          : "com.android.support:percent:$ANDROID_SUPPORT_LIBS_VERSION",
+        androidGridLayout       : "com.android.support:gridlayout-v7:$ANDROID_SUPPORT_LIBS_VERSION",
+        androidPalette          : "com.android.support:palette-v7:$ANDROID_SUPPORT_LIBS_VERSION",
+        androidConstraintLayout : "com.android.support.constraint:constraint-layout:1.0.2",
+        androidTransition       : "com.android.support:transition:$ANDROID_SUPPORT_LIBS_VERSION",
+        androidLifecycle        : "android.arch.lifecycle:extensions:1.0.0",
+        androidLifecycleCompiler: "android.arch.lifecycle:compiler:1.0.0",
+        androidLifecycleCommon  : "android.arch.lifecycle:common-java8:1.0.0",
+        rxPermission            : "com.tbruyelle.rxpermissions2:rxpermissions:0.9.3@aar",
+        rxJava                  : "io.reactivex.rxjava2:rxjava:2.0.8",
+        rxAndroid               : "io.reactivex.rxjava2:rxandroid:2.0.1",
+        rxKotlin                : "io.reactivex.rxjava2:rxkotlin:2.2.0",
+        rxBinding               : "com.jakewharton.rxbinding2:rxbinding:2.0.0",
+        rxRelay                 : "com.jakewharton.rxrelay2:rxrelay:2.0.0",
+        retrofit                : "com.squareup.retrofit2:retrofit:2.3.0",
+        retrofitGson            : "com.squareup.retrofit2:converter-gson:2.3.0",
+        retrofit2AdapterRxJava  : "com.squareup.retrofit2:adapter-rxjava2:2.3.0",
+        leakCanary              : "com.squareup.leakcanary:leakcanary-android:1.5.4",
+        leakCanaryRelease       : "com.squareup.leakcanary:leakcanary-android-no-op:1.5.4",
+        blockCanary             : "com.github.markzhai:blockcanary-android:1.5.0",
+        blockCanaryRelease      : "com.github.markzhai:blockcanary-no-op:1.5.0",
+        traceur                 : "com.tspoon.traceur:traceur:1.0.1",
+        kotterKnife             : "com.jakewharton:kotterknife:0.1.0-SNAPSHOT",
+        gson                    : "com.google.code.gson:gson:2.8.0",
+        ffmpeg                  : "com.writingminds:FFmpegAndroid:0.3.2",
+        viewAnimator            : "com.github.florent37:viewanimator:1.0.5",
+        okhttp                  : "com.squareup.okhttp3:okhttp:3.9.1",
+        okhttpLoggingInterceptor: "com.squareup.okhttp3:logging-interceptor:3.9.1",
+        networkConnectionClass  : "com.facebook.network.connectionclass:connectionclass:1.0.1",
+        fresco                  : "com.facebook.fresco:fresco:1.7.1",
+        frescoOkhttp            : "com.facebook.fresco:imagepipeline-okhttp3:1.7.1",
+        lego                    : "com.github.Hackforid.Lego:lego:0.6.4",
+        legoCompile             : "com.github.Hackforid.Lego:lego-compiler:0.6.4",
+        greendao                : "org.greenrobot:greendao:3.2.2",
+        svga                    : "com.github.yyued:SVGAPlayer-Android:2.0.3",
+        exoplayerCore           : "com.google.android.exoplayer:exoplayer-core:r2.4.1",
+        exoplayerUi             : "com.google.android.exoplayer:exoplayer-ui:r2.4.1",
+        exoplayerHls            : "com.google.android.exoplayer:exoplayer-hls:r2.4.1",
+        facebookLogin           : "com.facebook.android:facebook-login:$FACEBOOK_VERSION",
+        facebookShare           : "com.facebook.android:facebook-share:$FACEBOOK_VERSION",
+        accountkit              : "com.facebook.android:account-kit-sdk:$FACEBOOK_VERSION",
+        facebookAppLinks        : "com.facebook.android:facebook-applinks:$FACEBOOK_VERSION",
+        facebookMessenger       : "com.facebook.android:facebook-messenger:$FACEBOOK_VERSION",
+        firebaseAuth            : "com.google.firebase:firebase-auth:$FIREBASE_VERSION",
+        twitterComposer         : "com.twitter.sdk.android:tweet-composer:3.1.1",
+        playServiceAuth         : "com.google.android.gms:play-services-auth:$FIREBASE_VERSION",
+        dbflow                  : "com.github.Raizlabs.DBFlow:dbflow:${dbflow_version}",
+        dbflowProcessor         : "com.github.Raizlabs.DBFlow:dbflow-processor:${dbflow_version}",
+        dbflowCore              : "com.github.Raizlabs.DBFlow:dbflow-core:${dbflow_version}",
+        dbflowKotlin            : "com.github.Raizlabs.DBFlow:dbflow-kotlinextensions:${dbflow_version}",
+        dbflowRx2               : "com.github.Raizlabs.DBFlow:dbflow-rx2:${dbflow_version}",
+        dbflowRx2Kotlin         : "com.github.Raizlabs.DBFlow:dbflow-rx2-kotlinextensions:${dbflow_version}",
+        spanny                  : "com.binaryfork:spanny:1.0.4",
+        flexbox                 : "com.google.android:flexbox:0.3.1",
+        smarttablayout          : "com.ogaclejapan.smarttablayout:library:1.6.1@aar",
+        smarttablayoutUtilsV4   : "com.ogaclejapan.smarttablayout:utils-v4:1.6.1@aar",
+        stetho                  : "com.facebook.stetho:stetho-okhttp3:1.5.0",
+        multidex                : "com.android.support:multidex:1.0.2",
+        filedownloader          : "com.liulishuo.filedownloader:library:1.6.8",
+        imageCropper            : "com.theartofdev.edmodo:android-image-cropper:2.6.0",
+        lottie                  : "com.airbnb.android:lottie:2.3.1",
+        firebaseJobDispatcher   : 'com.firebase:firebase-jobdispatcher:0.8.5',
+        diskLruCache            : 'com.jakewharton:disklrucache:2.0.2',
+        appintro                : 'com.github.apl-devs:appintro:v4.2.2'
+]
